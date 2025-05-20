@@ -1,0 +1,14 @@
+:root {
+  --font-size-small: .875rem;
+  --font-size-base: 1rem;
+  --font-size-large: 1.125rem;
+  --font-size-x-large: 1.25rem;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --font-style-italic: italic;
+}

@@ -1,0 +1,11 @@
+:root {
+  --color-white: #ffffff;
+
+  --green-dark: #142121;
+  --green-x-light: #C5D8D8;
+
+  --yellow: #EDB575;
+
+  /* Alpha Aliases */
+  --yellow-alpha-85: rgb(237, 181, 117, 0.85);
+}
