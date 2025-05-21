@@ -1,19 +1,11 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { quicksand } from 'utils/fonts';
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Kim Dyla",
+  title: 'Kim Dyla',
   description: "Kim Dyla's Web Portfolio",
 };
 
@@ -24,11 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${quicksand.variable}`}>
         <nav>Navigation</nav>
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <footer>Footer</footer>
       </body>
     </html>

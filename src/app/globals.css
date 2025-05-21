@@ -18,7 +18,7 @@ body {
 body {
   color: var(--green-x-light);
   background: var(--green-dark);
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-quicksand);
   padding: 3.75rem 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
