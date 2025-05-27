@@ -1,0 +1,33 @@
+.footer {
+  --gap: 1.5rem;
+
+  align-items: center;
+  font-size: 0.8125rem;
+  line-height: 1;
+}
+
+.footerLinks {
+  --gap: 1.625rem;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.footerLink {
+  --gap: 0.5rem;
+
+  &:hover {
+    color: var(--yellow);
+  }
+}
+
+.divider {
+  border: 0.5px solid var(--green-x-light);
+  width: 2.5rem;
+}
+
+.copyright {
+  --gap: 0.5rem;
+}

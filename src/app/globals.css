@@ -18,8 +18,11 @@ body {
 body {
   color: var(--green-x-light);
   background: var(--green-dark);
+  display: grid;
   font-family: var(--font-quicksand);
-  padding: 3.75rem 0;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  padding: 3.75rem 2.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

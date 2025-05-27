@@ -9,6 +9,7 @@
 .horizontal-flex {
   --gap: 1.25rem;
 
+  align-items: center;
   display: flex;
   gap: var(--gap);
 }

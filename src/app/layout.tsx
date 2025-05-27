@@ -1,8 +1,14 @@
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import type { Metadata } from 'next';
 
 import { quicksand } from 'utils/fonts';
 
 import './globals.css';
+
+import { Footer } from 'components/footer';
+
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: 'Kim Dyla',
@@ -19,7 +25,7 @@ export default function RootLayout({
       <body className={`${quicksand.variable}`}>
         <nav>Navigation</nav>
         <main>{children}</main>
-        <footer>Footer</footer>
+        <Footer />
       </body>
     </html>
   );
