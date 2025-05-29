@@ -1,14 +1,7 @@
-.page {
-  
+.skills {
+  --gap: 1.875rem;
 }
 
-.main {
-}
-
-@media (max-width: 600px) {
-  .page {
-  }
-
-  .main {
-  }
+.skillsList {
+  flex-wrap: wrap;
 }
