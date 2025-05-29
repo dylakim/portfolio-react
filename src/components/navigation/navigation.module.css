@@ -1,0 +1,17 @@
+.navigation {
+  --gap: 5rem;
+
+  font-weight: var(--font-weight-medium);
+  justify-content: center;
+}
+
+.active {
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .navigation {
+    --gap: 0.625rem;
+    justify-content: space-between;
+  }
+}

@@ -7,6 +7,7 @@ import { quicksand } from 'utils/fonts';
 import './globals.css';
 
 import { Footer } from 'components/footer';
+import { Navigation } from 'components/navigation';
 
 config.autoAddCss = false;
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${quicksand.variable}`}>
-        <nav>Navigation</nav>
+        <Navigation />
         <main>{children}</main>
         <Footer />
       </body>

@@ -17,10 +17,6 @@
 
 .footerLink {
   --gap: 0.5rem;
-
-  &:hover {
-    color: var(--yellow);
-  }
 }
 
 .divider {

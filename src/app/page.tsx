@@ -5,7 +5,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className="vertical-flex">
-          <p>Page content</p>
+          <h2>About Me</h2>
         </div>
       </main>
     </div>
