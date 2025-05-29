@@ -42,14 +42,14 @@ const footerLinks: FooterLink[] = [
 
 export function Footer() {
   return (
-    <footer className={classNames(styles.footer, 'vertical-flex')}>
-      <div className={classNames(styles.footerLinks, 'horizontal-flex')}>
+    <footer className={classNames(styles.footer, 'verticalFlex')}>
+      <div className={classNames(styles.footerLinks, 'horizontalFlex')}>
         {footerLinks.map(({ label, url, icon }) => {
           return (
             <a
               key={label}
               href={url}
-              className={classNames(styles.footerLink, 'horizontal-flex')}
+              className={classNames(styles.footerLink, 'horizontalFlex')}
             >
               <FontAwesomeIcon icon={icon} /> {label}
             </a>
@@ -57,7 +57,7 @@ export function Footer() {
         })}
       </div>
       <hr className={styles.divider} />
-      <div className={classNames(styles.copyright, 'horizontal-flex')}>
+      <div className={classNames(styles.copyright, 'horizontalFlex')}>
         <span>Kim Dyla</span> <FontAwesomeIcon icon={faCopyright} />{' '}
         <span>2025</span>
       </div>

@@ -1,0 +1,31 @@
+.education {
+  --gap: 0.75rem;
+}
+
+.educationHeader {
+  --gap: 0.5rem;
+}
+
+.educationMeta {
+  justify-content: space-between;
+}
+
+.location {
+  --gap: 0.375rem;
+
+  font-size: 0.75rem;
+}
+
+.completionYear {
+  color: var(--gray);
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 767px) {
+  .educationMeta {
+    --gap: 0.3125rem;
+
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+}

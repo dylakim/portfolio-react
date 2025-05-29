@@ -1,4 +1,4 @@
-.vertical-flex {
+.verticalFlex {
   --gap: 1.25rem;
 
   display: flex;
@@ -6,7 +6,7 @@
   gap: var(--gap);
 }
 
-.horizontal-flex {
+.horizontalFlex {
   --gap: 1.25rem;
 
   align-items: center;

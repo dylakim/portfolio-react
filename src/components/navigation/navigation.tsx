@@ -25,7 +25,7 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className={classNames(styles.navigation, 'horizontal-flex')}>
+    <nav className={classNames(styles.navigation, 'horizontalFlex')}>
       {navLinks.map(({ path, label }) => (
         <Link
           key={label}

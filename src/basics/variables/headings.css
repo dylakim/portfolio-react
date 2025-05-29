@@ -1,4 +1,13 @@
-h2 {
+h2,
+.heading2 {
   color: var(--yellow);
+  font-family: var(--font-playfairDisplay);
   font-size: var(--font-size-x-large);
+  text-decoration: underline;
+}
+
+h4,
+.heading4 {
+  font-size: var(--font-size-large);
+  text-transform: uppercase;
 }
