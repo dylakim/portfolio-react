@@ -1,7 +1,33 @@
+.aboutPage {
+  --gap: 7.5rem;
+}
+
+.aboutMeDescription,
 .skills {
   --gap: 1.875rem;
 }
 
+.aboutMe {
+  --gap: 3.75rem;
+
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
 .skillsList {
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 40rem) {
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .profileImage {
+    align-self: center;
+  }
 }
