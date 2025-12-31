@@ -30,4 +30,8 @@
   .profileImage {
     align-self: center;
   }
+
+  .skillsList {
+    gap: 10px;
+  }
 }
