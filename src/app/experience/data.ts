@@ -9,7 +9,7 @@ export const experiences: ExperienceProps[] = [
   {
     location: 'Remote',
     positionTitle: 'React Front End Engineer',
-    companyName: 'Merkle',
+    companyName: 'Merkle - Experience Platforms',
     startDate: '9/2023',
     endDate: 'Present',
     logo: merkleLogo,
@@ -43,7 +43,8 @@ export const experiences: ExperienceProps[] = [
   {
     location: 'Southfield, MI & Remote',
     positionTitle: 'Senior Promotions Front End Developer',
-    companyName: 'Merkle - Promotions & Loyalty (formerly HelloWorld)',
+    companyName:
+      'Merkle - Promotions & Loyalty Solutions (formerly HelloWorld)',
     startDate: '1/2021',
     endDate: '9/2023',
     logo: helloworldLogo,
@@ -71,7 +72,8 @@ export const experiences: ExperienceProps[] = [
   {
     location: 'Southfield, MI',
     positionTitle: 'Promotions Front End Developer',
-    companyName: 'Merkle - Promotions & Loyalty (formerly HelloWorld)',
+    companyName:
+      'Merkle - Promotions & Loyalty Solutions (formerly HelloWorld)',
     startDate: '1/2021',
     endDate: '5/2015',
     logo: helloworldLogo,
