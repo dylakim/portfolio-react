@@ -27,15 +27,17 @@ export default function Home() {
     <div className={classNames(styles.aboutPage, 'verticalFlex')}>
       <section className={classNames(styles.aboutMe, 'horizontalFlex')}>
         <div className={classNames(styles.aboutMeDescription, 'verticalFlex')}>
-          <h2>About Me</h2>
+          <h2>Kim Dyla</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget
-            fermentum lectus. Phasellus maximus porttitor elit sit amet
-            volutpat. Nam non elit risus. Vivamus ante elit, euismod lacinia
-            quam at, efficitur maximus lacus. Morbi id risus est. Class aptent
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. In eget commodo neque, eget aliquam neque. Aenean ut urna
-            et nibh accumsan semper.
+            Experienced Front End Developer with a decade of expertise
+            transforming complex requirements into intuitive, accessible web
+            experiences. Background spans agency work building solutions for
+            diverse clients, with strengths in popular frontend frameworks,
+            component-driven architecture, and fostering development best
+            practices. Eager to transition to a product-focused role where I can
+            invest deeply in a mission-driven product, continue leveraging
+            modern frontend technologies, and contribute to work that creates
+            real value for users and communities.
           </p>
         </div>
         <Image
