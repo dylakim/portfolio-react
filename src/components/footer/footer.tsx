@@ -1,42 +1,47 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './footer.module.css';
 import { faAt, faFile, faFire } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import classNames from 'classnames';
+import type { AnchorHTMLAttributes } from 'react';
 
-interface FooterLink {
+import styles from './footer.module.css';
+
+interface FooterLink extends AnchorHTMLAttributes<HTMLAnchorElement> {
   label: string;
-  url: string;
   icon: IconDefinition;
 }
 
 const footerLinks: FooterLink[] = [
   {
     label: 'kim@dyla.dev',
-    url: 'mailto:kim@dyla.dev',
+    href: 'mailto:kim@dyla.dev',
     icon: faAt,
   },
   {
     label: 'Github',
-    url: 'https://github.com/dylakim',
+    href: 'https://github.com/dylakim',
     icon: faGithub,
+    target: '_blank',
   },
   {
     label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/dylakim/',
+    href: 'https://www.linkedin.com/in/dylakim/',
     icon: faLinkedin,
+    target: '_blank',
   },
   {
     label: 'Resume',
-    url: '',
+    href: '/Resume.pdf',
     icon: faFile,
+    target: '_blank',
   },
   {
     label: 'dyla.dev',
-    url: 'https://dyla.dev/',
+    href: 'https://dyla.dev/',
     icon: faFire,
+    target: '_blank',
   },
 ];
 
@@ -44,12 +49,12 @@ export function Footer() {
   return (
     <footer className={classNames(styles.footer, 'verticalFlex')}>
       <div className={classNames(styles.footerLinks, 'horizontalFlex')}>
-        {footerLinks.map(({ label, url, icon }) => {
+        {footerLinks.map(({ label, icon, ...rest }) => {
           return (
             <a
               key={label}
-              href={url}
               className={classNames(styles.footerLink, 'horizontalFlex')}
+              {...rest}
             >
               <FontAwesomeIcon icon={icon} /> {label}
             </a>
@@ -59,7 +64,7 @@ export function Footer() {
       <hr className={styles.divider} />
       <div className={classNames(styles.copyright, 'horizontalFlex')}>
         <span>Kim Dyla</span> <FontAwesomeIcon icon={faCopyright} />{' '}
-        <span>2025</span>
+        <span>2026</span>
       </div>
     </footer>
   );

@@ -1,4 +1,23 @@
+.page {
+  --gap: 5rem;
+}
+
+.experience,
 .education,
 .educationList {
   --gap: 1.875rem;
+}
+
+.experienceList {
+  --gap: 0;
+}
+
+.resume {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .experienceList {
+    --gap: 5rem;
+  }
 }

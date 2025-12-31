@@ -20,6 +20,7 @@ const preview: Preview = {
     docs: {
       theme: themes.dark,
     },
+    layout: 'fullscreen',
   },
   decorators: [globalFontsDecorator],
 };

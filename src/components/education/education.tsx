@@ -1,20 +1,20 @@
-import type { PropsWithChildren } from 'react';
-import styles from './education.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
-interface EducationProps extends PropsWithChildren {
+import styles from './education.module.css';
+export interface EducationProps {
   completionYear: string;
   location?: string;
   title: string;
+  description?: string;
 }
 
 export function Education({
-  children,
   completionYear,
   location,
   title,
+  description,
 }: EducationProps) {
   return (
     <article className={classNames(styles.education, 'verticalFlex')}>
@@ -31,7 +31,7 @@ export function Education({
         ) : null}
       </div>
 
-      {children}
+      {description ? <p>{description}</p> : null}
     </article>
   );
 }

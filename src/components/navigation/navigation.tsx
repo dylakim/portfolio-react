@@ -2,9 +2,9 @@
 
 import classNames from 'classnames';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 import styles from './navigation.module.css';
-import { usePathname } from 'next/navigation';
 
 const navLinks = [
   {

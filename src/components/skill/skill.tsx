@@ -1,9 +1,9 @@
 import type { JSX } from 'react';
+import classNames from 'classnames';
 
 import { skills } from './skills';
 import styles from './skill.module.css';
 import type { Skill } from './types';
-import classNames from 'classnames';
 
 type SkillStyle = 'pill' | 'pillCondensed' | 'icon';
 
@@ -17,7 +17,7 @@ export function Skill({ skill, style = 'pill' }: SkillProps): JSX.Element {
 
   return (
     <div className={classNames(styles.skill, styles[style])}>
-      <div className={styles.skillIcon}>{icon}</div>
+      {icon && <div className={styles.skillIcon}>{icon}</div>}
       {style === 'pill' ? <span>{displayName}</span> : null}
     </div>
   );

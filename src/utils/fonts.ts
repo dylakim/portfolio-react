@@ -1,4 +1,4 @@
-import { Quicksand, Playfair_Display } from 'next/font/google';
+import { Montserrat, Playfair_Display, Quicksand } from 'next/font/google';
 
 export const quicksand = Quicksand({
   variable: '--font-quicksand',
@@ -7,5 +7,10 @@ export const quicksand = Quicksand({
 
 export const playfairDisplay = Playfair_Display({
   variable: '--font-playfairDisplay',
+  subsets: ['latin'],
+});
+
+export const montserrat = Montserrat({
+  variable: '--font-montserrat',
   subsets: ['latin'],
 });

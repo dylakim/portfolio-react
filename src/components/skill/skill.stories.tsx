@@ -3,6 +3,9 @@ import { Skill } from './skill';
 
 const meta = {
   component: Skill,
+  parameters: {
+    layout: 'padded',
+  },
   tags: ['autodocs'],
 } satisfies Meta<typeof Skill>;
 

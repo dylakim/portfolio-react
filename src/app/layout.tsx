@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import classNames from 'classnames';
 import type { Metadata } from 'next';
 
-import { quicksand, playfairDisplay } from 'utils/fonts';
+import { playfairDisplay, quicksand } from 'utils/fonts';
 
 import './globals.css';
 

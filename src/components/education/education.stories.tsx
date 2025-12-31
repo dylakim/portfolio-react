@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import { Education } from './education';
 
 const meta = {
@@ -13,14 +14,14 @@ export const Default: Story = {
     title: 'Education title',
     location: 'Location',
     completionYear: '2025',
-    children: [<p key="1">Education description</p>],
+    description: 'Education description',
   },
 };
 
 export const NoDescription: Story = {
   args: {
     ...Default.args,
-    children: undefined,
+    description: undefined,
   },
 };
 
