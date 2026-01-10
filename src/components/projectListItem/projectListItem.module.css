@@ -1,0 +1,48 @@
+.projectListItemLink {
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+
+  &:hover {
+    transition: background-color 0.3s ease;
+    background: rgba(237, 181, 117, 0.1);
+    color: inherit;
+  }
+}
+
+.projectPreviewImageContainer {
+  width: 100%;
+  height: 11.25rem;
+  position: relative;
+}
+
+.projectPreviewImage {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.projectListItem {
+  --gap: 1.5625rem;
+  height: 100%;
+}
+
+.projectOverview {
+  --gap: 1.25rem;
+}
+
+.skillsContainer {
+  --gap: 0.75rem;
+  margin-top: auto;
+}
+
+.skillIcon {
+  & svg {
+    height: auto;
+    width: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projectList {
+    grid-template-columns: 1fr;
+  }
+}

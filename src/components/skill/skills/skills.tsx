@@ -54,6 +54,7 @@ import type { Skill } from '../types';
 interface SkillRenderingOptions {
   displayName: string;
   icon?: JSX.Element;
+  darkIcon?: JSX.Element;
 }
 
 export const skills: Record<Skill, SkillRenderingOptions> = {
@@ -119,6 +120,7 @@ export const skills: Record<Skill, SkillRenderingOptions> = {
   react: {
     displayName: 'React',
     icon: <SiReact color="#087EA4" />,
+    darkIcon: <SiReact color="#58C4DC" />,
   },
   reactTestingLibrary: {
     displayName: 'React Testing Library',

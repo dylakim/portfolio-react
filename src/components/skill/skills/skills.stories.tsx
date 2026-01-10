@@ -109,6 +109,14 @@ export const React: Story = {
   },
 };
 
+export const ReactDark: Story = {
+  args: {
+    skill: 'react',
+    isDark: true,
+    style: 'icon',
+  },
+};
+
 export const ReactTestingLibrary: Story = {
   args: {
     skill: 'reactTestingLibrary',

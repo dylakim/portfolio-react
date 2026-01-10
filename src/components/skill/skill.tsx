@@ -10,14 +10,25 @@ type SkillStyle = 'pill' | 'pillCondensed' | 'icon';
 interface SkillProps {
   skill: Skill;
   style?: SkillStyle;
+  isDark?: boolean;
+  className?: string;
 }
 
-export function Skill({ skill, style = 'pill' }: SkillProps): JSX.Element {
-  const { displayName, icon } = skills[skill] ?? {};
+export function Skill({
+  skill,
+  style = 'pill',
+  isDark = false,
+  className,
+}: SkillProps): JSX.Element {
+  const { displayName, icon, darkIcon } = skills[skill] ?? {};
 
   return (
-    <div className={classNames(styles.skill, styles[style])}>
-      {icon && <div className={styles.skillIcon}>{icon}</div>}
+    <div className={classNames(styles.skill, className, styles[style])}>
+      {icon || darkIcon ? (
+        <div className={styles.skillIcon}>
+          {isDark && darkIcon ? darkIcon : icon}
+        </div>
+      ) : null}
       {style === 'pill' ? <span>{displayName}</span> : null}
     </div>
   );

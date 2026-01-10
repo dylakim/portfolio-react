@@ -1,0 +1,15 @@
+.projectsSection {
+  --gap: 1.875rem;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 1.875rem;
+}
+
+@media screen and (max-width: 767px) {
+  .projectList {
+    grid-template-columns: 1fr;
+  }
+}
