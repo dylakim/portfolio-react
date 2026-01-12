@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
 body {
   color: var(--green-x-light);
   background: var(--green-dark);

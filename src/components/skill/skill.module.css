@@ -19,6 +19,13 @@
   }
 }
 
+.large {
+  & svg {
+    height: auto;
+    width: 1.875rem;
+  }
+}
+
 @media screen and (max-width: 40rem) {
   .skill {
     font-size: 0.875rem;

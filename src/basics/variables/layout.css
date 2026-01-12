@@ -13,3 +13,17 @@
   display: flex;
   gap: var(--gap);
 }
+
+.gridTwoColumn {
+  --gap: 2.8125rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+@media screen and (max-width: 767px) {
+  .gridTwoColumn {
+    grid-template-columns: 1fr;
+  }
+}

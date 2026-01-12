@@ -51,12 +51,6 @@
   color: var(--gray);
 }
 
-.skillsList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9375rem;
-}
-
 .positionDescriptionList {
   list-style: none;
 }
@@ -93,9 +87,5 @@
 
   .dates {
     font-size: 0.875rem;
-  }
-
-  .skillsList {
-    gap: 10px;
   }
 }

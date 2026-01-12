@@ -3,7 +3,8 @@ import type { AnchorHTMLAttributes } from 'react';
 
 import styles from './buttonLink.module.css';
 
-interface ButtonLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface ButtonLinkProps
+  extends AnchorHTMLAttributes<HTMLAnchorElement> {
   className?: string;
   label: string;
 }

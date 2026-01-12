@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 
+import { projects } from 'data/projects';
 import { ProjectListItem } from 'components/projectListItem';
 
-import { projects } from './data';
 import styles from './projectsPage.module.css';
 
 export default function Page() {
@@ -11,9 +11,9 @@ export default function Page() {
       <section className={classNames(styles.projectsSection, 'verticalFlex')}>
         <h2>Projects</h2>
 
-        <div className={classNames(styles.projectList)}>
-          {projects.map((project, index) => (
-            <ProjectListItem key={`project-${index}`} {...project} />
+        <div className={classNames(styles.projectList, 'gridTwoColumn')}>
+          {Object.values(projects).map((project) => (
+            <ProjectListItem key={project.title} {...project} />
           ))}
         </div>
       </section>

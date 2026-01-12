@@ -1,34 +1,31 @@
 import classNames from 'classnames';
-import Image, { type StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
-import { Skill } from 'components/skill';
-import type { Skill as SkillType } from 'components/skill/types';
+import type { ProjectType } from 'types/project';
+import { SkillGroup } from 'components/skillGroup';
 
 import styles from './projectListItem.module.css';
 
-export interface ProjectListItemProps {
-  slug: string;
-  previewImage: StaticImageData;
-  title: string;
-  shortDescription: string;
-  skills: SkillType[];
-}
+export type ProjectListItemProps = Pick<
+  ProjectType,
+  'slug' | 'previewImage' | 'title' | 'shortDescription' | 'keySkills'
+>;
 
 export function ProjectListItem({
   slug,
   previewImage,
   title,
   shortDescription,
-  skills,
+  keySkills,
 }: ProjectListItemProps) {
   return (
     <Link href={`/projects/${slug}`} className={styles.projectListItemLink}>
       <article className={classNames(styles.projectListItem, 'verticalFlex')}>
         <div className={styles.projectPreviewImageContainer}>
           <Image
-            src={previewImage}
-            alt={`${title} Screenshot`}
+            src={previewImage.src}
+            alt={previewImage.alt}
             fill={true}
             className={styles.projectPreviewImage}
           />
@@ -39,18 +36,17 @@ export function ProjectListItem({
           <p>{shortDescription}</p>
         </div>
 
-        <div className={classNames(styles.skillsContainer, 'horizontalFlex')}>
-          {skills?.length &&
-            skills.map((skill) => (
-              <Skill
-                key={`${title}-${skill}`}
-                skill={skill}
-                style="icon"
-                isDark={true}
-                className={styles.skillIcon}
-              />
-            ))}
-        </div>
+        {keySkills?.length && (
+          <SkillGroup
+            skills={keySkills}
+            skillProps={{
+              style: 'icon',
+              isDark: true,
+              iconSize: 'large',
+            }}
+            className={styles.skillsContainer}
+          />
+        )}
       </article>
     </Link>
   );

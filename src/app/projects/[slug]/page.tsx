@@ -6,7 +6,8 @@ import classNames from 'classnames';
 import { notFound } from 'next/navigation';
 import { projects } from 'data/projects';
 
-import styles from './projectPage.module.css';
+import { ProjectDetail } from 'components/projectDetail';
+import styles from './projectDetailPage.module.css';
 
 export default async function Page({
   params,
@@ -17,7 +18,7 @@ export default async function Page({
 
   if (!projects[slug]) notFound();
 
-  const { title, description } = projects[slug];
+  const project = projects[slug];
 
   return (
     <div className={classNames(styles.page, 'verticalFlex')}>
@@ -29,8 +30,7 @@ export default async function Page({
         Back to Projects
       </Link>
 
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <ProjectDetail {...project} />
     </div>
   );
 }

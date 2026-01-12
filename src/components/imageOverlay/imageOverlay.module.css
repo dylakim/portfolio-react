@@ -1,0 +1,41 @@
+.imageOverlayDialog {
+  background: transparent;
+  border: none;
+  margin-inline: auto;
+  max-width: 77.5rem;
+  padding: 1.5625rem;
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.imageOverlayContainer {
+  gap: 1.5625rem;
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.closeButtonContainer {
+  text-align: right;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.closeIcon {
+  color: var(--yellow);
+  cursor: pointer;
+  height: auto;
+  width: 1.125rem;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+}

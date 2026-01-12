@@ -1,0 +1,32 @@
+.projectDetailContainer {
+  --gap: 3.75rem;
+}
+
+.header,
+.mainContent {
+  --gap: 1.5625rem;
+}
+
+.image {
+  border-radius: 0.625rem;
+  height: auto;
+  width: 100%;
+}
+
+.imageButton {
+  appearance: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .projectDetailContainer {
+    --gap: 2.8125rem;
+  }
+
+  .header {
+    --gap: 1rem;
+  }
+}

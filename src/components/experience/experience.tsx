@@ -4,8 +4,8 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 import Image, { type StaticImageData } from 'next/image';
 
-import { Skill } from 'components/skill';
 import type { Skill as SkillType } from 'components/skill/types';
+import { SkillGroup } from 'components/skillGroup';
 
 import styles from './experience.module.css';
 
@@ -64,13 +64,7 @@ export function Experience({
         </div>
       </div>
 
-      {skills && skills.length > 0 ? (
-        <div className={styles.skillsList}>
-          {skills.map((skill) => (
-            <Skill key={`${positionTitle}-${skill}`} skill={skill} />
-          ))}
-        </div>
-      ) : null}
+      {skills?.length && <SkillGroup skills={skills} />}
 
       <ul className={styles.positionDescriptionList}>
         {positionDescription.map((desc, index) => (

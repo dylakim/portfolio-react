@@ -1,5 +1,14 @@
 p {
   line-height: 1.4;
+
+  & a {
+    color: var(--yellow);
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
 }
 
 a {
