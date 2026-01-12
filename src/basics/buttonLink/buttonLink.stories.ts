@@ -6,7 +6,6 @@ const meta = {
   parameters: {
     layout: 'padded',
   },
-  tags: ['autodocs'],
 } satisfies Meta<typeof ButtonLink>;
 
 export default meta;

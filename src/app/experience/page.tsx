@@ -1,11 +1,12 @@
 import classNames from 'classnames';
 
+import { ButtonLink } from 'basics/buttonLink/buttonLink';
 import { Education } from 'components/education';
 import { Experience } from 'components/experience';
-import { ButtonLink } from 'basics/buttonLink/buttonLink';
+import { education } from 'data/education';
+import { experiences } from 'data/experiences';
 
 import styles from './page.module.css';
-import { education, experiences } from './data';
 
 export default function Page() {
   return (

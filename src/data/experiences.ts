@@ -1,15 +1,14 @@
 import type { ExperienceProps } from 'components/experience';
-import type { EducationProps } from 'components/education';
 
-import helloworldLogo from '../../assets/helloworldLogo.png';
-import merkleLogo from '../../assets/merkleLogo.png';
-import aquentLogo from '../../assets/aquentLogo.png';
+import helloworldLogo from '../assets/helloworldLogo.png';
+import merkleLogo from '../assets/merkleLogo.png';
+import aquentLogo from '../assets/aquentLogo.png';
 
 export const experiences: ExperienceProps[] = [
   {
     location: 'Remote',
     positionTitle: 'React Front End Engineer',
-    companyName: 'Merkle - Experience Platforms',
+    companyName: 'Merkle - Customer Experience and Commerce',
     startDate: '9/2023',
     endDate: 'Present',
     logo: merkleLogo,
@@ -44,7 +43,7 @@ export const experiences: ExperienceProps[] = [
     location: 'Southfield, MI & Remote',
     positionTitle: 'Senior Promotions Front End Developer',
     companyName:
-      'Merkle - Promotions & Loyalty Solutions (formerly HelloWorld)',
+      'Merkle - Promotions, Loyalty, and Messaging (formerly HelloWorld)',
     startDate: '1/2021',
     endDate: '9/2023',
     logo: helloworldLogo,
@@ -73,7 +72,7 @@ export const experiences: ExperienceProps[] = [
     location: 'Southfield, MI',
     positionTitle: 'Promotions Front End Developer',
     companyName:
-      'Merkle - Promotions & Loyalty Solutions (formerly HelloWorld)',
+      'Merkle - Promotions, Loyalty, and Messaging (formerly HelloWorld)',
     startDate: '1/2021',
     endDate: '5/2015',
     logo: helloworldLogo,
@@ -111,23 +110,5 @@ export const experiences: ExperienceProps[] = [
       'Administered the WordPress content management system for content teams.',
     ],
     isLastExperience: true,
-  },
-];
-
-export const education: EducationProps[] = [
-  {
-    title: 'Sitecore Personalization Certification',
-    completionYear: '2024',
-  },
-  {
-    title: 'Sitecore CDP Certification',
-    completionYear: '2024',
-  },
-  {
-    title: 'Bachelor of Arts',
-    completionYear: '2013',
-    location: 'Michigan State University',
-    description:
-      'Media Arts and Technology degree concentrating on Front-End Web Development, User Experience, and Human Computer Interaction. Specialization in Digital Humanities.',
   },
 ];

@@ -16,6 +16,8 @@
 
 .profileImage {
   border-radius: 50%;
+  height: 13.5625rem;
+  width: 13.5625rem;
 }
 
 .skillsList {

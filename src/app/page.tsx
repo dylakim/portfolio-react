@@ -2,25 +2,10 @@ import classNames from 'classnames';
 import Image from 'next/image';
 
 import { Skill } from 'components/skill';
-import type { Skill as SkillType } from 'components/skill/types';
+import { skills } from 'data/skills';
 
 import styles from './page.module.css';
-
-const skills: SkillType[] = [
-  'react',
-  'typescript',
-  'javascript',
-  'css',
-  'jest',
-  'sitecore',
-  'nextjs',
-  'storybook',
-  'figma',
-  'git',
-  'html',
-  'scss',
-  'vue',
-];
+import profileImage from '../assets/profileImage.jpg';
 
 export default function Home() {
   return (
@@ -41,10 +26,8 @@ export default function Home() {
           </p>
         </div>
         <Image
-          src="/profileImage.jpg"
-          width="217"
-          height="217"
-          alt="Profile photo of Kim"
+          src={profileImage}
+          alt="Profile photo of Kim Dyla"
           className={styles.profileImage}
         />
       </section>
