@@ -1,0 +1,12 @@
+import{j as e}from"./jsx-runtime-DoEZbXM1.js";import{c as s}from"./index-FGJkmGnF.js";import{n as j}from"./image-Bsf1eCQ8.js";import{L as u}from"./link-CwwPhB3g.js";import{S as g}from"./skillGroup-C1WtY29U.js";import{a as _}from"./atd-BZE1P51Y.js";import"./jsx-runtime-Bw5QeaCk.js";import"./_commonjsHelpers-CqkleIqs.js";import"./router-context.shared-runtime-JvAHygqe.js";import"./index-Za3YRiuF.js";import"./index-DqQFE8CJ.js";import"./image-context-7lgQhHJj.js";import"./index-DDr4uD8U.js";import"./use-merged-ref-vu_KmdPm.js";import"./add-base-path-BgZyUWYd.js";import"./skill-C9brxfV5.js";import"./index-2Jcv12mt.js";const I="_projectListItemLink_1dfy2_1",v="_projectPreviewImageContainer_1dfy2_13",f="_projectPreviewImage_1dfy2_13",L="_projectListItem_1dfy2_1",x="_projectOverview_1dfy2_31",w="_skillsContainer_1dfy2_35",t={projectListItemLink:I,projectPreviewImageContainer:v,projectPreviewImage:f,projectListItem:L,projectOverview:x,skillsContainer:w};function m({slug:p,previewImage:o,title:l,shortDescription:d,keySkills:r}){return e.jsx(u,{href:`/projects/${p}`,className:t.projectListItemLink,children:e.jsxs("article",{className:s(t.projectListItem,"verticalFlex"),children:[e.jsx("div",{className:t.projectPreviewImageContainer,children:e.jsx(j,{src:o.src,alt:o.alt,fill:!0,className:t.projectPreviewImage})}),e.jsxs("div",{className:s(t.projectOverview,"verticalFlex"),children:[e.jsx("h3",{children:l}),e.jsx("p",{children:d})]}),(r==null?void 0:r.length)&&e.jsx(g,{skills:r,skillProps:{style:"icon",isDark:!0,iconSize:"large"},className:t.skillsContainer})]})})}m.__docgenInfo={description:"",methods:[],displayName:"ProjectListItem"};const $={component:m},i={args:{slug:"project-title",previewImage:{src:_,alt:""},title:"Project Title",shortDescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",keySkills:["react"]}};var a,c,n;i.parameters={...i.parameters,docs:{...(a=i.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    slug: 'project-title',
+    previewImage: {
+      src: atdImage,
+      alt: ''
+    },
+    title: 'Project Title',
+    shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    keySkills: ['react']
+  }
+}`,...(n=(c=i.parameters)==null?void 0:c.docs)==null?void 0:n.source}}};const A=["Default"];export{i as Default,A as __namedExportsOrder,$ as default};
