@@ -10,6 +10,8 @@ import './globals.css';
 import { Footer } from 'components/footer';
 import { Navigation } from 'components/navigation';
 
+import styles from './layout.module.css';
+
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
@@ -28,7 +30,7 @@ export default function RootLayout({
         className={classNames(quicksand.variable, playfairDisplay.variable)}
       >
         <Navigation />
-        <main>{children}</main>
+        <main className={styles.main}>{children}</main>
         <Footer />
       </body>
     </html>

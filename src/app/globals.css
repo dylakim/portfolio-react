@@ -28,7 +28,6 @@ body {
   gap: 4.6875rem;
   grid-template-rows: auto 1fr auto;
   margin: auto;
-  max-width: 56.25rem;
   min-height: 100vh;
   padding: 3.75rem 2.5rem;
   -webkit-font-smoothing: antialiased;
