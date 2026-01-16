@@ -22,7 +22,7 @@ export default function Home() {
             practices. Eager to transition to a product-focused role where I can
             invest deeply in a mission-driven product, continue leveraging
             modern frontend technologies, and contribute to work that creates
-            real value for users and communities.
+            real value for users and communities. Dev test.
           </p>
         </div>
         <Image
