@@ -1,7 +1,7 @@
 import type { StoryObj } from '@storybook/react';
 
 const meta = {
-  title: 'Basics/layout',
+  title: 'Variables/layout',
   parameters: {
     layout: 'padded',
   },
@@ -10,7 +10,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const verticalFlex: Story = {
+export const VerticalFlex: Story = {
   render: () => (
     <div className="verticalFlex">
       <p>Vertical Flex Top</p>
@@ -19,7 +19,7 @@ export const verticalFlex: Story = {
   ),
 };
 
-export const horizontalFlex: Story = {
+export const HorizontalFlex: Story = {
   render: () => (
     <div className="horizontalFlex">
       <p>Horizontal Flex Left</p>

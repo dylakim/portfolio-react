@@ -1,0 +1,28 @@
+.colorTileGroup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.colorTileWrapper {
+  background: var(--color-white);
+  border-radius: 0.3125rem;
+  color: var(--green-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.625rem;
+  padding-bottom: 0.75rem;
+}
+
+.colorTile {
+  border-radius: 0.3125rem;
+  height: 9.375rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .colorTileGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
