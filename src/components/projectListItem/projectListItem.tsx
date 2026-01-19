@@ -31,22 +31,24 @@ export function ProjectListItem({
           />
         </div>
 
-        <div className={classNames(styles.projectOverview, 'verticalFlex')}>
-          <h3 className={styles.projectTitle}>{title}</h3>
-          <p>{shortDescription}</p>
-        </div>
+        <div className={classNames(styles.projectInfo, 'verticalFlex')}>
+          <div className={classNames(styles.projectOverview, 'verticalFlex')}>
+            <h3 className={styles.projectTitle}>{title}</h3>
+            <p>{shortDescription}</p>
+          </div>
 
-        {keySkills?.length && (
-          <SkillGroup
-            skills={keySkills}
-            skillProps={{
-              style: 'icon',
-              isDark: true,
-              iconSize: 'large',
-            }}
-            className={styles.skillsContainer}
-          />
-        )}
+          {keySkills?.length && (
+            <SkillGroup
+              skills={keySkills}
+              skillProps={{
+                style: 'icon',
+                isDark: true,
+                iconSize: 'large',
+              }}
+              className={styles.skillsContainer}
+            />
+          )}
+        </div>
       </article>
     </Link>
   );

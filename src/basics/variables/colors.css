@@ -10,4 +10,6 @@
 
   /* Alpha Aliases */
   --yellow-alpha-85: rgb(237, 181, 117, 0.85);
+  --yellow-alpha-30: rgb(237, 181, 117, 0.3);
+  --yellow-alpha-10: rgb(237, 181, 117, 0.1);
 }
