@@ -20,7 +20,7 @@ export function Education({
     <article className={classNames(styles.education, 'verticalFlex')}>
       <div className={classNames(styles.educationHeader, 'verticalFlex')}>
         <div className={classNames(styles.educationMeta, 'horizontalFlex')}>
-          <h3 className="heading4">{title}</h3>
+          <h3 className={styles.educationTitle}>{title}</h3>
           <p className={styles.completionYear}>{completionYear}</p>
         </div>
 

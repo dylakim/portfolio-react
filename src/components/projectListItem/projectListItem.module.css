@@ -28,6 +28,10 @@
   height: 100%;
 }
 
+.projectTitle {
+  color: inherit;
+}
+
 .projectOverview {
   --gap: 1.25rem;
 }

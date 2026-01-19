@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <div className={classNames(styles.page, 'verticalFlex')}>
       <section className={classNames(styles.experience, 'verticalFlex')}>
-        <h2>Experiences</h2>
+        <h1>Experience</h1>
 
         <div className={classNames(styles.experienceList, 'verticalFlex')}>
           {experiences.map((experience) => (

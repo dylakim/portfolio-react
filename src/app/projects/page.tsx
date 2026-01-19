@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div className={classNames(styles.page)}>
       <section className={classNames(styles.projectsSection, 'verticalFlex')}>
-        <h2>Projects</h2>
+        <h1>Projects</h1>
 
         <div className={classNames(styles.projectList, 'gridTwoColumn')}>
           {Object.values(projects).map((project) => (

@@ -24,7 +24,7 @@ body {
   color: var(--green-x-light);
   background: var(--green-dark);
   display: grid;
-  font-family: var(--font-quicksand);
+  font-family: var(--font-montserrat), sans-serif;
   gap: 4.6875rem;
   grid-template-rows: auto 1fr auto;
   margin: auto;

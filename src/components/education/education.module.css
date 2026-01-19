@@ -6,6 +6,13 @@
   --gap: 0.5rem;
 }
 
+.educationTitle {
+  color: inherit;
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .educationMeta {
   justify-content: space-between;
 }

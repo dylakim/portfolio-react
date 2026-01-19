@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import classNames from 'classnames';
 import type { Metadata } from 'next';
 
-import { playfairDisplay, quicksand } from 'utils/fonts';
+import { montserrat, playfairDisplay, quicksand } from 'utils/fonts';
 
 import './globals.css';
 
@@ -27,7 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={classNames(quicksand.variable, playfairDisplay.variable)}
+        className={classNames(
+          quicksand.variable,
+          playfairDisplay.variable,
+          montserrat.variable
+        )}
       >
         <Navigation />
         <main className={styles.main}>{children}</main>

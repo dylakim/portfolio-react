@@ -32,7 +32,7 @@ export function ProjectListItem({
         </div>
 
         <div className={classNames(styles.projectOverview, 'verticalFlex')}>
-          <h3>{title}</h3>
+          <h3 className={styles.projectTitle}>{title}</h3>
           <p>{shortDescription}</p>
         </div>
 

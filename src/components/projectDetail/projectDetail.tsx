@@ -51,7 +51,7 @@ export function ProjectDetail({
           className={classNames(styles.projectDetailContainer, 'verticalFlex')}
         >
           <div className={classNames(styles.header, 'verticalFlex')}>
-            <h2>{title}</h2>
+            <h1>{title}</h1>
 
             <div>
               {role && <p>{role}</p>}
