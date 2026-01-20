@@ -9,6 +9,8 @@
   --yellow: #edb575;
 
   /* Alpha Aliases */
+  --green-dark-alpha-90: rgb(31, 50, 50, 0.9);
+
   --yellow-alpha-85: rgb(237, 181, 117, 0.85);
   --yellow-alpha-30: rgb(237, 181, 117, 0.3);
   --yellow-alpha-10: rgb(237, 181, 117, 0.1);

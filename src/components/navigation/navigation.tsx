@@ -25,16 +25,20 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className={classNames(styles.navigation, 'horizontalFlex')}>
-      {navLinks.map(({ path, label }) => (
-        <Link
-          key={label}
-          href={path}
-          className={classNames({ [styles.active]: pathname == path })}
-        >
-          {label}
-        </Link>
-      ))}
-    </nav>
+    <header className={classNames(styles.navigation, 'horizontalFlex')}>
+      <div className={styles.logo}>kim.dyla</div>
+
+      <nav className={classNames(styles.navLinks, 'horizontalFlex')}>
+        {navLinks.map(({ path, label }) => (
+          <Link
+            key={label}
+            href={path}
+            className={classNames({ [styles.active]: pathname == path })}
+          >
+            {label}
+          </Link>
+        ))}
+      </nav>
+    </header>
   );
 }
