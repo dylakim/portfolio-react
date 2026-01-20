@@ -23,13 +23,12 @@ html:has(dialog[open]) {
 body {
   color: var(--green-x-light);
   background: var(--green-dark);
-  display: grid;
-  font-family: var(--font-quicksand);
-  gap: 4.6875rem;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  gap: 9.375rem;
   margin: auto;
-  min-height: 100vh;
-  padding: 3.75rem 2.5rem;
+  padding: 9.375rem 0 3.75rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

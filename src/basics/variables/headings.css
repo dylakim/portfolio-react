@@ -1,12 +1,30 @@
+h1,
+.heading1,
+h2,
+.heading2,
+h3,
+.heading3 {
+  color: var(--yellow);
+  font-weight: var(--font-weight-light);
+}
+
+h1,
+.heading1 {
+  font-size: var(--font-size-2x-large);
+}
+
 h2,
 .heading2 {
-  color: var(--yellow);
-  font-family: var(--font-playfairDisplay);
   font-size: var(--font-size-x-large);
+}
+
+h3,
+.heading3 {
+  font-size: var(--font-size-large);
 }
 
 h4,
 .heading4 {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
   text-transform: uppercase;
 }

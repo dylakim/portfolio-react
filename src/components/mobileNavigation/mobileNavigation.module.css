@@ -1,0 +1,58 @@
+.mobileNavigationToggle {
+  --button-position: 1rem;
+  --button-size: 2.5rem;
+
+  align-items: center;
+  appearance: none;
+  background: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  bottom: var(--button-position);
+  color: var(--green-dark);
+  cursor: pointer;
+  display: flex;
+  height: var(--button-size);
+  justify-content: center;
+  padding: 0.625rem;
+  position: fixed;
+  right: var(--button-position);
+  width: var(--button-size);
+  z-index: 101;
+
+  & svg {
+    height: 100%;
+  }
+}
+
+.mobileNavigationMenu {
+  background: transparent;
+  border: none;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+
+  &::backdrop {
+    background: var(--yellow);
+  }
+}
+
+.navLinks {
+  --gap: 5.25rem;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  height: 100%;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 48rem) {
+  .mobileNavigationToggle,
+  .mobileNavigationMenu {
+    display: none;
+  }
+}

@@ -35,8 +35,7 @@
 }
 
 .positionTitle {
-  font-size: 1.25rem;
-  font-family: var(--font-montserrat);
+  color: inherit;
   font-weight: bold;
   text-transform: uppercase;
 }

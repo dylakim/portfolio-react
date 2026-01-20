@@ -12,7 +12,7 @@ export default function Home() {
     <div className={classNames(styles.aboutPage, 'verticalFlex')}>
       <section className={classNames(styles.aboutMe, 'horizontalFlex')}>
         <div className={classNames(styles.aboutMeDescription, 'verticalFlex')}>
-          <h2>Kim Dyla</h2>
+          <h1>Hello! 👋🏻 I&apos;m Kim</h1>
           <p>
             Experienced Front End Developer with a decade of expertise
             transforming complex requirements into intuitive, accessible web
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
 
       <section className={classNames(styles.skills, 'verticalFlex')}>
-        <h2>Skills</h2>
+        <h2>Key Skills</h2>
         <div className={classNames(styles.skillsList, 'horizontalFlex')}>
           {skills.map((skill) => (
             <Skill key={skill} skill={skill} />

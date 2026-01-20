@@ -1,0 +1,40 @@
+.header {
+  --gap: 5rem;
+
+  background: var(--green-dark-alpha-90);
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid var(--yellow-alpha-30);
+  font-weight: var(--font-weight-medium);
+  justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 50;
+}
+
+.logo {
+  color: var(--yellow);
+  font-family: var(--font-playfairDisplay);
+  font-size: 1.5rem;
+}
+
+.navLinks {
+  --gap: 5rem;
+}
+
+.active {
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 47.9375rem) {
+  .header {
+    --gap: 0.625rem;
+    justify-content: space-between;
+  }
+
+  .navLinks {
+    display: none;
+  }
+}

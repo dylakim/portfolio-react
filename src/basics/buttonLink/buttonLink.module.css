@@ -1,11 +1,11 @@
 .buttonLink {
-  background: var(--green-dark);
+  background: var(--yellow);
   border: 1px solid var(--yellow);
   border-radius: 0.3125rem;
-  color: var(--yellow);
+  color: var(--green-dark);
   font-size: 1.125rem;
   font-weight: 600;
-  padding: 0.3125rem 0.9375rem;
+  padding: 0.5rem 0.9375rem;
 
   transition:
     background-color 0.3s ease,
@@ -13,8 +13,8 @@
     color 0.3s ease;
 
   &:hover {
-    background: var(--yellow);
-    color: var(--green-dark);
+    background: var(--green-dark);
+    color: var(--yellow);
 
     transition:
       background-color 0.3s ease,
