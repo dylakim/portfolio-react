@@ -1,4 +1,4 @@
-.navigation {
+.header {
   --gap: 5rem;
 
   background: var(--green-dark-alpha-90);
@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 100;
+  z-index: 50;
 }
 
 .logo {
@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 47.9375rem) {
-  .navigation {
+  .header {
     --gap: 0.625rem;
     justify-content: space-between;
   }

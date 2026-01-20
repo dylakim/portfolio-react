@@ -4,28 +4,15 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import styles from './navigation.module.css';
+import { navLinks } from 'data/navigation';
 
-const navLinks = [
-  {
-    label: 'About Me',
-    path: '/',
-  },
-  {
-    label: 'Experience',
-    path: '/experience',
-  },
-  {
-    label: 'Projects',
-    path: '/projects',
-  },
-];
+import styles from './header.module.css';
 
-export function Navigation() {
+export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className={classNames(styles.navigation, 'horizontalFlex')}>
+    <header className={classNames(styles.header, 'horizontalFlex')}>
       <div className={styles.logo}>kim.dyla</div>
 
       <nav className={classNames(styles.navLinks, 'horizontalFlex')}>

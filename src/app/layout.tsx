@@ -8,7 +8,8 @@ import { montserrat, playfairDisplay, quicksand } from 'utils/fonts';
 import './globals.css';
 
 import { Footer } from 'components/footer';
-import { Navigation } from 'components/navigation';
+import { Header } from 'components/header';
+import { MobileNavigation } from 'components/mobileNavigation';
 
 import styles from './layout.module.css';
 
@@ -33,7 +34,8 @@ export default function RootLayout({
           montserrat.variable
         )}
       >
-        <Navigation />
+        <Header />
+        <MobileNavigation />
         <main className={styles.main}>{children}</main>
         <Footer />
       </body>
