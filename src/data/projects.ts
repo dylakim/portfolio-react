@@ -1,24 +1,40 @@
 import type { ProjectType } from 'types/project';
 
 import atdImage from '../assets/projects/atd.png';
+import atd1Image from '../assets/projects/atd1.png';
+import atd2Image from '../assets/projects/atd2.png';
+import atd3Image from '../assets/projects/atd3.png';
+import portfolioImage from '../assets/projects/portfolio.png';
 
 export const projects: Record<string, ProjectType> = {
   portfolio: {
     slug: 'portfolio',
     title: 'Portfolio',
-    role: 'React Front End Engineer',
-    company: 'Merkle - Customer Experience and Commerce',
     shortDescription:
-      'This portfolio website built with React and Next.js to showcase my skills.',
+      'A portfolio website built with React and Next.js to showcase my skills.',
     description:
-      'This portfolio website built with React and Next.js to showcase my skills. <br><br>TODO: add link to public Storybook',
+      'A portfolio website built with React and Next.js to showcase my skills and abilities. Designed with my favorite color, green, and a minimalist, clean look.',
+    keyFeatures: [
+      'Built with React and Typescript',
+      'Leveraged Next.js for simple page routing',
+      'Deployed with Vercel',
+      'Managed components in Storybook',
+      'Custom component-driven design using Figma',
+    ],
     keySkills: ['react'],
     skills: ['react', 'typescript', 'nextjs', 'css'],
-    previewImage: { src: atdImage, alt: 'testing' },
-    primaryImages: [
-      { src: atdImage, alt: 'test' },
-      { src: atdImage, alt: '' },
+    buttons: [
+      { label: 'GitHub', href: 'https://github.com/dylakim/portfolio-react' },
+      {
+        label: 'Storybook',
+        href: 'https://portfolio-react-storybook.vercel.app/',
+      },
     ],
+    previewImage: {
+      src: portfolioImage,
+      alt: 'Screenshot of portfolio website',
+    },
+    images: [],
   },
   'association-for-talent-development': {
     slug: 'association-for-talent-development',
@@ -29,12 +45,36 @@ export const projects: Record<string, ProjectType> = {
       'A redesign of the education section of the ATD public site to improve the overall look and feel, user experience, and content authoring experience.',
     description:
       'A redesign of the education section of the ATD public site to improve the overall look and feel, user experience, and content authoring experience.',
+    keyFeatures: [
+      'Large-scale React and Typescript project',
+      'Thoughtful Contentful content types with the purpose of giving content authors flexibility while maintaining an intuitive user experience',
+      'GraphQL is pretty neat',
+    ],
     keySkills: ['react'],
     skills: ['react', 'typescript', 'nextjs', 'css'],
-    previewImage: { src: atdImage, alt: '' },
-    primaryImages: [
-      { src: atdImage, alt: '' },
-      { src: atdImage, alt: '' },
+    buttons: [
+      {
+        label: 'ATD Education',
+        href: 'https://www.td.org/education',
+      },
+    ],
+    previewImage: {
+      src: atdImage,
+      alt: 'Screenshot of ATD Education landing page',
+    },
+    images: [
+      {
+        image: { src: atd1Image, alt: 'test' },
+        caption: 'Tile in white. Tile group.',
+      },
+      {
+        image: { src: atd2Image, alt: 'test' },
+        caption: 'Tile in gray. Also buttons.',
+      },
+      {
+        image: { src: atd3Image, alt: 'test' },
+        caption: 'ATDYou Learning Library header',
+      },
     ],
   },
   'center-for-internet-security': {
@@ -49,9 +89,9 @@ export const projects: Record<string, ProjectType> = {
     keySkills: ['react'],
     skills: ['react', 'typescript', 'nextjs', 'css'],
     previewImage: { src: atdImage, alt: '' },
-    primaryImages: [
-      { src: atdImage, alt: '' },
-      { src: atdImage, alt: '' },
+    images: [
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
     ],
   },
   'altria-loyalty-component-library': {
@@ -67,9 +107,9 @@ export const projects: Record<string, ProjectType> = {
     keySkills: ['vue'],
     skills: ['vue', 'css'],
     previewImage: { src: atdImage, alt: '' },
-    primaryImages: [
-      { src: atdImage, alt: '' },
-      { src: atdImage, alt: '' },
+    images: [
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
     ],
   },
   'admin-tool-ui-library-migration': {
@@ -85,9 +125,9 @@ export const projects: Record<string, ProjectType> = {
     keySkills: ['vue'],
     skills: ['vue', 'css'],
     previewImage: { src: atdImage, alt: '' },
-    primaryImages: [
-      { src: atdImage, alt: '' },
-      { src: atdImage, alt: '' },
+    images: [
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
     ],
   },
   'dunkin-at-home-extras': {
@@ -103,9 +143,9 @@ export const projects: Record<string, ProjectType> = {
     keySkills: ['vue'],
     skills: ['vue', 'css'],
     previewImage: { src: atdImage, alt: '' },
-    primaryImages: [
-      { src: atdImage, alt: '' },
-      { src: atdImage, alt: '' },
+    images: [
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
     ],
   },
   'altria-loyalty-programs': {
@@ -119,9 +159,9 @@ export const projects: Record<string, ProjectType> = {
     keySkills: ['vue'],
     skills: ['vue', 'css'],
     previewImage: { src: atdImage, alt: '' },
-    primaryImages: [
-      { src: atdImage, alt: '' },
-      { src: atdImage, alt: '' },
+    images: [
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
     ],
   },
   'dyla-home-page': {
@@ -132,9 +172,9 @@ export const projects: Record<string, ProjectType> = {
     keySkills: ['vue'],
     skills: ['vue', 'css'],
     previewImage: { src: atdImage, alt: '' },
-    primaryImages: [
-      { src: atdImage, alt: '' },
-      { src: atdImage, alt: '' },
+    images: [
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
+      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
     ],
   },
 };

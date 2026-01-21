@@ -1,0 +1,14 @@
+.imageWithCaption {
+  --gap: 1rem;
+}
+
+.image {
+  border-radius: 0.625rem;
+  height: auto;
+  max-width: 100%;
+}
+
+.caption {
+  font-size: var(--font-size-small);
+  font-style: var(--font-style-italic);
+}
