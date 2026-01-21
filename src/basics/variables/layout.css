@@ -22,7 +22,7 @@
   gap: var(--gap);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .gridTwoColumn {
     grid-template-columns: 1fr;
   }
