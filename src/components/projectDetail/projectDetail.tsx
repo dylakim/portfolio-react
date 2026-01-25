@@ -1,13 +1,10 @@
 'use client';
 import classNames from 'classnames';
 import Image from 'next/image';
-import { useRef, useState } from 'react';
 
-import { ButtonGroup } from 'components/buttonGroup';
-import ImageOverlay from 'components/imageOverlay/imageOverlay';
+import { ButtonLink } from 'basics/buttonLink/buttonLink';
+import ImageWithCaption from 'components/imageWithCaption/imageWithCaption';
 import { SkillGroup } from 'components/skillGroup';
-
-import type { ImageType } from 'types/image';
 import type { ProjectType } from 'types/project';
 
 import styles from './projectDetail.module.css';
@@ -18,10 +15,11 @@ export type ProjectDetailProps = Pick<
   | 'role'
   | 'company'
   | 'description'
+  | 'keyFeatures'
   | 'skills'
   | 'buttons'
-  | 'primaryImages'
-  | 'secondaryImages'
+  | 'previewImage'
+  | 'images'
 >;
 
 export function ProjectDetail({
@@ -29,21 +27,12 @@ export function ProjectDetail({
   role,
   company,
   description,
+  keyFeatures,
   skills,
   buttons,
-  primaryImages,
-  secondaryImages,
+  previewImage,
+  images,
 }: ProjectDetailProps) {
-  const imageOverlay = useRef<HTMLDialogElement>(null);
-  const [currentImage, setCurrentImage] = useState<ImageType>();
-
-  function handleImageClick(image: ImageType) {
-    setCurrentImage(image);
-    if (imageOverlay.current) {
-      imageOverlay.current.showModal();
-    }
-  }
-
   return (
     <>
       <article className={classNames(styles.projectDetail, 'verticalFlex')}>
@@ -53,55 +42,75 @@ export function ProjectDetail({
           <div className={classNames(styles.header, 'verticalFlex')}>
             <h1>{title}</h1>
 
-            <div>
-              {role && <p>{role}</p>}
-              {company && <p>{company}</p>}
-            </div>
+            {role || company ? (
+              <div className={classNames(styles.experience, 'horizontalFlex')}>
+                {role && <p className={styles.role}>{role}</p>}
+                &bull;
+                {company && <p>{company}</p>}
+              </div>
+            ) : null}
           </div>
 
-          <div className="gridTwoColumn">
-            <div className={classNames(styles.mainContent, 'verticalFlex')}>
-              {skills?.length && <SkillGroup skills={skills} />}
+          <Image
+            src={previewImage.src}
+            alt={previewImage.alt}
+            className={styles.image}
+          />
 
+          <div className={classNames(styles.mainContent, 'gridTwoColumn')}>
+            <div className={classNames(styles.summary, 'verticalFlex')}>
+              <h2>Summary</h2>
               <p dangerouslySetInnerHTML={{ __html: description }} />
 
-              {buttons?.length && <ButtonGroup buttons={buttons} />}
+              {keyFeatures?.length && (
+                <div
+                  className={classNames(
+                    styles.keyFeaturesSection,
+                    'verticalFlex'
+                  )}
+                >
+                  <h3>Key Features</h3>
+
+                  <ul className={styles.keyFeaturesList}>
+                    {keyFeatures.map((keyFeature) => (
+                      <li key={keyFeature} className={styles.keyFeature}>
+                        {keyFeature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
 
-            {primaryImages?.length && (
+            <div className={classNames(styles.rightPanel, 'verticalFlex')}>
+              {buttons?.length && (
+                <div className={classNames(styles.buttons, 'verticalFlex')}>
+                  {buttons.map((button) => (
+                    <ButtonLink
+                      key={button.label}
+                      {...button}
+                      className={styles.button}
+                    />
+                  ))}
+                </div>
+              )}
+
               <div className="verticalFlex">
-                {primaryImages.map((image, index) => {
-                  const { src, alt } = image;
-                  return (
-                    <button
-                      key={`primary-image-${index}`}
-                      onClick={() => handleImageClick(image)}
-                      className={styles.imageButton}
-                    >
-                      <Image src={src} alt={alt} className={styles.image} />
-                    </button>
-                  );
-                })}
+                <h3>Toolset</h3>
+                {skills?.length && <SkillGroup skills={skills} />}
               </div>
-            )}
+            </div>
           </div>
 
-          {secondaryImages?.length && (
-            <div className="gridTwoColumn">
-              {secondaryImages.map(({ src, alt }, index) => (
-                <Image
-                  key={`secondary-image-${index}`}
-                  src={src}
-                  alt={alt}
-                  className={styles.image}
-                />
+          {images?.length ? (
+            <div className={classNames(styles.imageList, 'verticalFlex')}>
+              {images.map((image, index) => (
+                <ImageWithCaption key={`secondary-image-${index}`} {...image} />
               ))}
             </div>
-          )}
+          ) : null}
         </div>
       </article>
-
-      <ImageOverlay ref={imageOverlay} image={currentImage} />
     </>
   );
 }

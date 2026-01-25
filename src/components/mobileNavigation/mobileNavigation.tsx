@@ -14,6 +14,8 @@ import styles from './mobileNavigation.module.css';
 
 export function MobileNavigation() {
   const pathname = usePathname();
+  const parentPathname = pathname.split('/').filter((i) => i.length)[0];
+
   const navMenu = useRef<HTMLDialogElement>(null);
 
   function toggleMobileNav() {
@@ -44,16 +46,20 @@ export function MobileNavigation() {
         </button>
 
         <nav className={classNames(styles.navLinks, 'verticalFlex')}>
-          {navLinks.map(({ path, label }) => (
-            <Link
-              key={label}
-              href={path}
-              className={classNames({ [styles.active]: pathname == path })}
-              onClick={closeMobileNav}
-            >
-              {label}
-            </Link>
-          ))}
+          {navLinks.map(({ path, label }) => {
+            const isActive = parentPathname === path.replace('/', '');
+
+            return (
+              <Link
+                key={label}
+                href={path}
+                className={classNames({ [styles.active]: isActive })}
+                onClick={closeMobileNav}
+              >
+                {label}
+              </Link>
+            );
+          })}
         </nav>
       </dialog>
     </>

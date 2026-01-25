@@ -58,7 +58,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 40.0625rem) {
+@media screen and (min-width: 48rem) {
   .experience {
     margin-left: 2.375rem;
     padding-bottom: 5rem;
@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 47.9375rem) {
   .positionMeta {
     flex-direction: column;
     gap: 0.3125rem;

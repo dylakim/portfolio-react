@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.9375rem) {
   .colorTileGroup {
     grid-template-columns: repeat(2, 1fr);
   }

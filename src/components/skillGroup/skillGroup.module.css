@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 47.9375rem) {
   .skillGroupContainer {
     --gap: 0.625rem;
   }
