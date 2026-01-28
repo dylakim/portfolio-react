@@ -1,6 +1,9 @@
 'use client';
 import classNames from 'classnames';
 import Image from 'next/image';
+import Markdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+import rehypeSanitize from 'rehype-sanitize';
 
 import { ButtonLink } from 'basics/buttonLink/buttonLink';
 import ImageWithCaption from 'components/imageWithCaption/imageWithCaption';
@@ -60,7 +63,13 @@ export function ProjectDetail({
           <div className={classNames(styles.mainContent, 'gridTwoColumn')}>
             <div className={classNames(styles.summary, 'verticalFlex')}>
               <h2>Summary</h2>
-              <p dangerouslySetInnerHTML={{ __html: description }} />
+
+              <Markdown
+                components={{ p: 'div' }}
+                rehypePlugins={[rehypeRaw, rehypeSanitize]}
+              >
+                {description}
+              </Markdown>
 
               {keyFeatures?.length && (
                 <div
