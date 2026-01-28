@@ -12,6 +12,8 @@ import {
   SiCss3Hex,
   SiFigma,
   SiFigmaHex,
+  SiFirebase,
+  SiFirebaseHex,
   SiGit,
   SiGitHex,
   SiGraphql,
@@ -28,6 +30,8 @@ import {
   SiMochaHex,
   SiNextdotjs,
   SiNextdotjsHex,
+  SiNpm,
+  SiNpmHex,
   SiReact,
   SiSass,
   SiSassHex,
@@ -82,6 +86,10 @@ export const skills: Record<Skill, SkillRenderingOptions> = {
     displayName: 'Figma',
     icon: <SiFigma color={SiFigmaHex} />,
   },
+  firebase: {
+    displayName: 'Firebase',
+    icon: <SiFirebase color={SiFirebaseHex} />,
+  },
   git: {
     displayName: 'Git',
     icon: <SiGit color={SiGitHex} />,
@@ -113,6 +121,10 @@ export const skills: Record<Skill, SkillRenderingOptions> = {
   nextjs: {
     displayName: 'Next.js',
     icon: <SiNextdotjs color={SiNextdotjsHex} />,
+  },
+  npm: {
+    displayName: 'NPM',
+    icon: <SiNpm color={SiNpmHex} />,
   },
   photoshop: {
     displayName: 'Photoshop',

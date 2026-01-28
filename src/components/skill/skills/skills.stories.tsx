@@ -49,6 +49,12 @@ export const Figma: Story = {
   },
 };
 
+export const Firebase: Story = {
+  args: {
+    skill: 'firebase',
+  },
+};
+
 export const Git: Story = {
   args: {
     skill: 'git',
@@ -94,6 +100,12 @@ export const Mocha: Story = {
 export const Nextjs: Story = {
   args: {
     skill: 'nextjs',
+  },
+};
+
+export const Npm: Story = {
+  args: {
+    skill: 'npm',
   },
 };
 
