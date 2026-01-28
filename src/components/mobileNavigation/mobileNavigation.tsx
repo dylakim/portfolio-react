@@ -1,21 +1,16 @@
 'use client';
 
 import classNames from 'classnames';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
 import { useRef } from 'react';
 
-import { navLinks } from 'data/navigation';
+import { NavigationLinks } from 'components/navigationLinks';
 
 import styles from './mobileNavigation.module.css';
 
 export function MobileNavigation() {
-  const pathname = usePathname();
-  const parentPathname = pathname.split('/').filter((i) => i.length)[0];
-
   const navMenu = useRef<HTMLDialogElement>(null);
 
   function toggleMobileNav() {
@@ -45,22 +40,14 @@ export function MobileNavigation() {
           <FontAwesomeIcon icon={faXmark} />
         </button>
 
-        <nav className={classNames(styles.navLinks, 'verticalFlex')}>
-          {navLinks.map(({ path, label }) => {
-            const isActive = parentPathname === path.replace('/', '');
-
-            return (
-              <Link
-                key={label}
-                href={path}
-                className={classNames({ [styles.active]: isActive })}
-                onClick={closeMobileNav}
-              >
-                {label}
-              </Link>
-            );
-          })}
-        </nav>
+        <NavigationLinks
+          orientation="vertical"
+          className={classNames(styles.navLinks)}
+          linkProps={{
+            activeClassName: styles.active,
+            onClick: closeMobileNav,
+          }}
+        />
       </dialog>
     </>
   );
