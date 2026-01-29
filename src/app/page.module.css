@@ -25,6 +25,10 @@
 }
 
 @media screen and (max-width: 47.9375rem) {
+  .aboutPage {
+    --gap: 3.75rem;
+  }
+
   .aboutMe {
     flex-direction: column-reverse;
   }
