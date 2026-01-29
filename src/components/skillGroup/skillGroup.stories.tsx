@@ -13,6 +13,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    skills: ['react', 'typescript', 'css', 'html', 'nextjs'],
+    skills: ['react', 'typescript', 'css', 'photoshop', 'html', 'nextjs'],
   },
 };

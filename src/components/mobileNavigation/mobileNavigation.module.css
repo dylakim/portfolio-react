@@ -43,6 +43,11 @@
   font-size: 1.5rem;
   font-weight: var(--font-weight-bold);
   height: 100%;
+
+  :hover {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 .active {

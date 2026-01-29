@@ -6,6 +6,7 @@ export const skills: Skill[] = [
   'javascript',
   'css',
   'jest',
+  'contentful',
   'sitecore',
   'nextjs',
   'storybook',

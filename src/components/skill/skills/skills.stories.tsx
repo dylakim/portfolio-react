@@ -43,9 +43,21 @@ export const CSS: Story = {
   },
 };
 
+export const Drupal: Story = {
+  args: {
+    skill: 'drupal',
+  },
+};
+
 export const Figma: Story = {
   args: {
     skill: 'figma',
+  },
+};
+
+export const Firebase: Story = {
+  args: {
+    skill: 'firebase',
   },
 };
 
@@ -94,6 +106,12 @@ export const Mocha: Story = {
 export const Nextjs: Story = {
   args: {
     skill: 'nextjs',
+  },
+};
+
+export const Npm: Story = {
+  args: {
+    skill: 'npm',
   },
 };
 

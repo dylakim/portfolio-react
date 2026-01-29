@@ -7,7 +7,8 @@
     color: var(--green-dark);
     display: inline-flex;
     gap: 0.3125rem;
-    padding: 0.3125rem 1rem;
+    padding: 0 1rem;
+    height: 32px;
   }
 }
 
@@ -32,7 +33,8 @@
 
     &.pill,
     &.pillCondensed {
-      padding: 0.1875rem 0.875rem;
+      height: 1.75rem;
+      padding: 0 0.875rem;
     }
   }
 
