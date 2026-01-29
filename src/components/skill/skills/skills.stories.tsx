@@ -43,6 +43,12 @@ export const CSS: Story = {
   },
 };
 
+export const Drupal: Story = {
+  args: {
+    skill: 'drupal',
+  },
+};
+
 export const Figma: Story = {
   args: {
     skill: 'figma',

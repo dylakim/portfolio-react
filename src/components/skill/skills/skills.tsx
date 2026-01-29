@@ -10,6 +10,8 @@ import {
   SiContentfulHex,
   SiCss3,
   SiCss3Hex,
+  SiDrupal,
+  SiDrupalHex,
   SiFigma,
   SiFigmaHex,
   SiFirebase,
@@ -81,6 +83,10 @@ export const skills: Record<Skill, SkillRenderingOptions> = {
   css: {
     displayName: 'CSS',
     icon: <SiCss3 color={SiCss3Hex} />,
+  },
+  drupal: {
+    displayName: 'Drupal',
+    icon: <SiDrupal color={SiDrupalHex} />,
   },
   figma: {
     displayName: 'Figma',

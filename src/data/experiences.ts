@@ -3,6 +3,7 @@ import type { ExperienceProps } from 'components/experience';
 import helloworldLogo from '../assets/helloworldLogo.png';
 import merkleLogo from '../assets/merkleLogo.png';
 import aquentLogo from '../assets/aquentLogo.png';
+import ciesaLogo from '../assets/ciesaLogo.svg';
 
 export const experiences: ExperienceProps[] = [
   {
@@ -35,8 +36,7 @@ export const experiences: ExperienceProps[] = [
       'Advocated for and integrated TypeScript during a full CIS library redesign initiative.',
       "Redesigned the Education section of the Association for Talent Development's (ATD) website using React, Typescript, and Contentful CMS. Delicately enhanced component feature sets by giving content authors the power to decide when to use upgraded components.",
       'Enforced clean coding practices through code reviews and unit tests.',
-      'Earned Contentful Certified Professional certification.',
-      'Earned Sitecore CDP and Personalize certifications.',
+      'Earned Contentful Certified Professional, Sitecore CDP, and Sitecor Personalize certifications.',
     ],
   },
   {
@@ -108,6 +108,21 @@ export const experiences: ExperienceProps[] = [
     positionDescription: [
       'Designed and developed front-end features for a variety of internal and client projects.',
       'Administered the WordPress content management system for content teams.',
+    ],
+  },
+  {
+    location: 'Lansing, MI',
+    positionTitle: 'Web Developer',
+    companyName: 'Ciesa Design',
+    startDate: '6/2013',
+    endDate: '9/2014',
+    logo: ciesaLogo,
+    skills: ['drupal', 'wordpress', 'html', 'css', 'jquery', 'photoshop'],
+    positionDescription: [
+      'Developed websites, applications, and digital solutions for tablets and smartphones',
+      'Used Drupal, WordPress, PHP, and HTML/CSS to build responsive websites on a Linux, Apache, MySQL, PHP stack',
+      'Testing and Quality Assurance on Mac, Windows, iOS, and Android browsers',
+      'Maintenance and management of existing Drupal, PHP, and HTML sites',
     ],
     isLastExperience: true,
   },

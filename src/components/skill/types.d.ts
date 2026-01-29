@@ -4,6 +4,7 @@ export type Skill =
   | 'chakraUI'
   | 'css'
   | 'contentful'
+  | 'drupal'
   | 'figma'
   | 'firebase'
   | 'git'
