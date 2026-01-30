@@ -45,6 +45,8 @@ import {
   SiTestinglibraryHex,
   SiTypescript,
   SiTypescriptHex,
+  SiVercel,
+  SiVercelHex,
   SiVuedotjs,
   SiVuedotjsHex,
   SiWordpress,
@@ -166,6 +168,10 @@ export const skills: Record<Skill, SkillRenderingOptions> = {
   typescript: {
     displayName: 'TypeScript',
     icon: <SiTypescript color={SiTypescriptHex} />,
+  },
+  vercel: {
+    displayName: 'Vercel',
+    icon: <SiVercel color={SiVercelHex} />,
   },
   vue: {
     displayName: 'Vue',

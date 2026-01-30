@@ -25,6 +25,7 @@ export type Skill =
   | 'storybook'
   | 'templateToolkit'
   | 'typescript'
+  | 'vercel'
   | 'vue'
   | 'vuex'
   | 'wcag'
