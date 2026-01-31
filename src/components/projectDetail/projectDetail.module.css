@@ -21,12 +21,6 @@
   font-weight: var(--font-weight-light);
 }
 
-.image {
-  border-radius: 0.625rem;
-  height: auto;
-  width: 100%;
-}
-
 .keyFeaturesSection {
   --gap: 1.5rem;
 }
@@ -63,6 +57,19 @@
 
   .header {
     --gap: 1rem;
+  }
+
+  .experience {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .role {
+    font-size: var(--font-size-medium);
+  }
+
+  .experienceSeparator {
+    display: none;
   }
 
   .mainContent {

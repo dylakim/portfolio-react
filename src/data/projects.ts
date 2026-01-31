@@ -1,12 +1,11 @@
 import type { ProjectType } from 'types/project';
 
-import atdImage from '../assets/projects/atd.png';
-import atd1Image from '../assets/projects/atd1.png';
-import atd2Image from '../assets/projects/atd2.png';
-import atd3Image from '../assets/projects/atd3.png';
+import atdImage from '../assets/projects/atd-edu-landing.png';
+import atdCardCarousel from '../assets/projects/atd-card-carousel.png';
+import atdPlpHeader from '../assets/projects/atd-product-list-page-header.png';
+import atdYou from '../assets/projects/atd-you.png';
 import portfolioImage from '../assets/projects/portfolio.png';
-import skoalRewardsPreview from '../assets/projects/skoal-rewards-crop.png';
-import skoalRewards from '../assets/projects/skoal-rewards.png';
+import skoalRewardsPreview from '../assets/projects/skoal-rewards-full-crop.png';
 import dunkinExtras from '../assets/projects/dunkinextra.png';
 import dylaDev from '../assets/projects/dylaDev.png';
 
@@ -15,30 +14,41 @@ export const projects: Record<string, ProjectType> = {
     slug: 'portfolio',
     title: 'Portfolio',
     shortDescription:
-      'A portfolio website built with React and Next.js to showcase my skills.',
+      'A personal portfolio website built with React, TypeScript, and Next.js and deployed with Vercel.',
     description:
-      'A portfolio website built with React and Next.js to showcase my skills and abilities. Designed with my favorite color, green, and a minimalist, clean look.',
+      "A personal portfolio website designed to showcase my development work and technical expertise. Built with React, TypeScript, and Next.js, the site demonstrates modern web development practices including type-safe coding, file-based routing, and performance optimization. The clean, minimalist aesthetic centers around a green color palette that reflects my personal brand.</p><p>The project follows a component-driven development approach, with all UI components designed in Figma and documented in Storybook for isolated development and testing. Deployed through Vercel's automated pipeline, the site benefits from continuous integration and seamless updates, ensuring the portfolio remains current with my latest work and skills.</p>",
     keyFeatures: [
-      'Built with React and Typescript',
-      'Leveraged Next.js for simple page routing',
-      'Deployed with Vercel',
-      'Managed components in Storybook',
-      'Custom component-driven design using Figma',
+      'Modern React & TypeScript stack - Leveraged type-safe development practices for robust, maintainable code',
+      'Next.js routing and optimization - Implemented file-based routing and performance optimizations for seamless navigation',
+      'Continuous deployment with Vercel - Automated build and deployment pipeline for rapid iteration',
+      'Component documentation with Storybook - Maintained an isolated development environment for building and testing reusable UI components',
+      'Design system in Figma - Created a custom component library and design system to ensure visual consistency across the site',
     ],
     keySkills: ['react'],
-    skills: ['react', 'typescript', 'nextjs', 'css'],
+    skills: [
+      'react',
+      'javascript',
+      'typescript',
+      'nextjs',
+      'html',
+      'css',
+      'storybook',
+      'figma',
+      'vercel',
+    ],
     buttons: [
       { label: 'GitHub', href: 'https://github.com/dylakim/portfolio-react' },
       {
         label: 'Storybook',
-        href: 'https://portfolio-react-storybook.vercel.app/',
+        href: 'https://storybook.kim.dyla.dev/',
       },
     ],
     previewImage: {
-      src: portfolioImage,
-      alt: 'Screenshot of portfolio website',
+      image: {
+        src: portfolioImage,
+        alt: "Screenshot of Kim Dyla's portfolio website",
+      },
     },
-    images: [],
   },
   'association-for-talent-development': {
     slug: 'association-for-talent-development',
@@ -46,14 +56,14 @@ export const projects: Record<string, ProjectType> = {
     role: 'React Front End Engineer',
     company: 'Merkle - Customer Experience and Commerce',
     shortDescription:
-      'A redesign of the education section of the ATD public site to improve the overall look and feel, user experience, and content authoring experience',
+      "A modern redesign of ATD's Courses & Certification section, built with React, TypeScript, and Contentful.",
     description:
-      'Association for Talent Development, or ATD, is a knowledge base for people who develop talent in the workplace. They offer a library of educational courses, certification programs, and workshops among other community resources. ATD came to Merkle seeking a redesign of the Courses & Certification section of their public site. With a 2 month timeline, a client managed codebase and Contentful space, and ever-changing designs, we had our work cut out for us. This project gave me the opportunity to work with Contentful for the first time and make use of my recently acquired Contentful Certified Professional credential. It also introduced me to GraphQL, which was used to query Contentful, and ChakraUI, which was already heavily used in the project. My contribution included creating new Contentful content types and components, redesigning and improving existing components, and sneaking in some quality of life improvements.',
+      "<p>Association for Talent Development (ATD) is a leading knowledge platform for workplace learning and development professionals, offering educational courses, certification programs, workshops, and community resources. ATD partnered with Merkle to redesign the Courses & Certification section of their public website.</p><p>This project presented unique challenges: a tight 2-month timeline, a client-managed codebase and Contentful instance, and evolving design requirements. I served as a key contributor, leveraging my Contentful Certified Professional credential to architect new content types and components while learning GraphQL for content queries and working extensively with ChakraUI.</p><p>My contributions centered on designing and implementing new Contentful content types and components tailored to ATD's content strategy. I also redesigned and optimized existing UI components to align with the new visual direction while improving performance. Throughout the project, I introduced quality-of-life improvements that enhanced both the developer experience and overall site functionality.</p><p>This project expanded my technical toolkit with hands-on experience in GraphQL and deepened my expertise in headless CMS architecture. Below are a few examples of the components for which I was responsible.</p>",
     keyFeatures: [
-      'Large-scale React and Typescript project',
-      'Modern design refresh of Courses & Certification',
-      'Thoughtful Contentful content types with the purpose of giving content authors flexibility while maintaining an intuitive user experience',
-      "Backwards compatibility: components that already existed were not visually impacted. Content authors can choose when to use a component's new design.",
+      'Enterprise React & TypeScript application - Contributed to a large-scale, production-grade codebase with modern development practices',
+      'Courses & Certification redesign - Delivered a contemporary visual refresh that elevated the user experience while maintaining brand consistency',
+      'Flexible content architecture - Engineered Contentful content types that balance content author autonomy with seamless, intuitive end-user experiences',
+      'Backward-compatible component system - Preserved existing component functionality while introducing opt-in design updates, allowing content authors to migrate at their own pace',
     ],
     keySkills: ['react'],
     skills: [
@@ -67,26 +77,42 @@ export const projects: Record<string, ProjectType> = {
     ],
     buttons: [
       {
-        label: 'ATD Education',
+        label: 'ATD Courses & Certification',
         href: 'https://www.td.org/education',
       },
     ],
     previewImage: {
-      src: atdImage,
-      alt: 'Screenshot of ATD Education landing page',
+      image: {
+        src: atdImage,
+        alt: 'Screenshot of ATD Education landing page',
+      },
+      caption:
+        'A basic version of the header component features a headline, description, and CTA buttons on the left, and an image on the right. Highly reusable card components are featured here in two variations. Cards components are contained in a CardCollection component, set in the grid layout.',
     },
     images: [
       {
-        image: { src: atd1Image, alt: 'test' },
-        caption: 'Tile in white. Tile group.',
+        image: {
+          src: atdCardCarousel,
+          alt: 'Screenshot of a card carousel displaying three ATD educational programs',
+        },
+        caption:
+          'Another version of the Card component inside a CardCollection component. This CardCollection is set to display as a carousel with 3 cards visible.',
       },
       {
-        image: { src: atd2Image, alt: 'test' },
-        caption: 'Tile in gray. Also buttons.',
+        image: {
+          src: atdPlpHeader,
+          alt: 'Screenshot of an ATD product list page header with breadcrumb navigation and course details.',
+        },
+        caption:
+          'A version of the header component with a featured course displayed in the right column instead of an image.',
       },
       {
-        image: { src: atd3Image, alt: 'test' },
-        caption: 'ATDYou Learning Library header',
+        image: {
+          src: atdYou,
+          alt: 'Screenshot of the ATDYou header section with breadcrumbs and subscription details.',
+        },
+        caption:
+          'Another version of the header component with subscription details displayed in the right column instead of an image.',
       },
     ],
   },
@@ -96,16 +122,35 @@ export const projects: Record<string, ProjectType> = {
     role: 'React Front End Engineer',
     company: 'Merkle - Customer Experience and Commerce',
     shortDescription:
-      'An internal portal for CIS customers to manage their services and products.',
+      'A cybersecurity member portal built with React, TypeScript, and Sitecore',
     description:
-      'An internal portal for CIS customers to manage their services and products.',
-    keySkills: ['react'],
-    skills: ['react', 'typescript', 'nextjs', 'css'],
-    previewImage: { src: atdImage, alt: '' },
-    images: [
-      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
-      { image: { src: atdImage, alt: 'test' }, caption: 'Test caption' },
+      "<p>The Center for Internet Security (CIS) partnered with Merkle to completely rebuild and redesign their member portal and develop new platform features. This private, member-only application serves CIS's cybersecurity community with essential tools and resources, powered by Sitecore as the content management system. The project presented a unique opportunity: build out the new portal based on existing functionality in year one, followed by a comprehensive redesign in year two. The redesign allowed us to refactor the codebase, eliminate technical debt, and introduce TypeScript for improved type safety and developer experience.</p><p>As an equal contributor on the development team, I built fully-featured components, prioritizing reusability and Sitecore integration, and took ownership of various features. I advocated for adopting TypeScript during the redesign, recognizing its value for long-term maintainability. This project marked my first professional experience with React and provided valuable hands-on practice with TypeScript. The opportunity to revisit and refine our work proved surprisingly rewarding—much like methodically organizing a cluttered space, we emerged with a cleaner, more maintainable codebase that better served both the development team and CIS members.</p>",
+    keyFeatures: [
+      'React & TypeScript architecture - Built a modern, type-safe application with improved code quality and developer experience',
+      "Headless Sitecore integration - Integrated React components with Sitecore's headless CMS architecture, decoupling content management from presentation for greater flexibility",
+      'Technical debt reduction - Leveraged the redesign phase to implement TypeScript, refactor components, and establish best practices',
+      'Feature development and expansion - Extended portal functionality with net-new capabilities tailored to member needs',
     ],
+    keySkills: ['react'],
+    skills: [
+      'react',
+      'javascript',
+      'typescript',
+      'nextjs',
+      'html',
+      'css',
+      'sitecore',
+      'storybook',
+      'jest',
+      'reactTestingLibrary',
+    ],
+    buttons: [{ label: 'CIS Portal', href: 'https://portal.cisecurity.org/' }],
+    previewImage: {
+      image: {
+        src: atdImage,
+        alt: '',
+      },
+    },
   },
   'altria-loyalty': {
     slug: 'altria-loyalty',
@@ -114,18 +159,15 @@ export const projects: Record<string, ProjectType> = {
     company:
       'Merkle - Promotions, Loyalty, and Messaging (formerly HelloWorld)',
     shortDescription:
-      "A component library built to streamline the development and maintenance of Altria's loyalty programs.",
-    description: `<p>Altria, one of HelloWorld's long term clients, wanted to build a loyalty program for its biggest brands - Skoal, Copenhagen, and On! Nicotine - in order to drive consumer engagement, retention, and brand loyalty. The programs would be punch card systems where consumers can find a code on a product and earn a punch. A predetermined number of punches completes a punchcard, at which point the user can choose a reward. The monetary value of the rewards increase as the consumer completes more punch cards, encouraging them to purchase more products.</p><p>The team knew at least three programs were expected to be delivered and each would be nearly identical to each other in functionality. Site branding and program strategy would set the programs apart. Given this knowledge, I decided to create a component library, the first of its kind on this team, in order to streamline the development and maintenance of the long running programs. The component library and the programs were built with Vue.js.</p><p><i>Disclaimer: While I contributed to a project for a tobacco company that encouraged product use through loyalty rewards, I want to be clear that I do not support marketing of a product with known, severe health risks. I believe it is unethical to encourage increased use of a substance linked to cancer for material incentives.</i></p>`,
+      'Scalable loyalty programs for Altria brands, powered by a custom Vue.js component library.',
+    description: `<p>Altria, a long-standing HelloWorld client, sought to build loyalty programs for three flagship brands—Skoal, Copenhagen, and On! Nicotine—to drive consumer engagement, retention, and brand loyalty. Each program operates as a digital punch card system: consumers enter codes found on products to earn punches, and upon completing a card, they can redeem rewards of increasing value, incentivizing repeat purchases.</p><p>With three nearly identical programs on the roadmap, differentiated only by branding and strategy, I identified an opportunity to optimize our development approach. I spearheaded the creation of the team's first component library, built with Vue.js, to streamline development and ensure consistent, maintainable code across all programs. This foundational architecture enabled efficient delivery of multiple brand experiences while reducing technical debt and accelerating future feature development.</p><p><i>Disclaimer: While I contributed to a project for a tobacco company that encouraged product use through loyalty rewards, I want to be clear that I do not support marketing of a product with known, severe health risks. I believe it is unethical to encourage increased use of a substance linked to cancer for material incentives.</i></p>`,
     keyFeatures: [
-      'A component library, made available as a private node package, optimized development of and proved to be an efficient way to maintain shared components.',
-      'Three nearly identical, responsive, Vue.js web applications ',
+      'Custom Vue.js component library - Developed and published as a private npm package, enabling rapid development and centralized maintenance across multiple brand programs',
+      'Multi-brand application suite - Delivered three fully responsive, production-ready Vue.js applications with shared functionality and brand-specific customization',
+      'Streamlined deployment pipeline - Established a unified development workflow that enabled simultaneous updates and feature rollouts across all three brand applications from a single codebase',
     ],
     keySkills: ['vue'],
     skills: ['vue', 'javascript', 'scss', 'mocha', 'chai', 'npm'],
-    previewImage: {
-      src: skoalRewardsPreview,
-      alt: 'Screenshot of the Skoal Rewards program punch cards',
-    },
     buttons: [
       { label: 'Skoal Rewards', href: 'https://www.skoal.com/rewards/' },
       {
@@ -137,14 +179,12 @@ export const projects: Record<string, ProjectType> = {
         href: 'https://www.onnicotine.com/rewards/',
       },
     ],
-    images: [
-      {
-        image: {
-          src: skoalRewards,
-          alt: 'Screenshot of the Skoal Rewards program',
-        },
+    previewImage: {
+      image: {
+        src: skoalRewardsPreview,
+        alt: 'Screenshot of the Skoal Rewards program',
       },
-    ],
+    },
   },
   'dunkin-at-home-extras': {
     slug: 'dunkin-at-home-extras',
@@ -153,11 +193,16 @@ export const projects: Record<string, ProjectType> = {
     company:
       'Merkle - Promotions, Loyalty, and Messaging (formerly HelloWorld)',
     shortDescription:
-      "Dunkin' Donuts loyalty program to promote and encourage the use of their at-home products, particularly during the COVID-19 pandemic",
+      "A rewards program that incentivized at-home Dunkin' coffee purchases during the COVID-19 pandemic.",
     description:
-      "Dunkin' At Home Extras is a rewards program for purchasing Dunkin' Coffee products for use at home. Users can upload their grocery receipts and earn points for their Dunkin' purchases. Points can be redeemed for Dunkin' gift cards. I was the lead front end developer on the cross-discipline team that built this program.",
+      "<p>Dunkin' At Home Extras is a rewards program designed to incentivize purchases of Dunkin' coffee products for home consumption. Launched during the COVID-19 pandemic when at-home coffee consumption surged, users earn points by uploading photos of grocery receipts containing eligible Dunkin' purchases, which can be redeemed for Dunkin' gift cards.</p><p>As the lead front-end developer on this cross-functional team, I architected and built a fully responsive Vue.js application that adheres to WCAG AAA accessibility standards. The program bridges the gap between retail grocery shopping and brand loyalty, creating a seamless digital experience that encourages repeat purchases and strengthens customer engagement with the Dunkin' brand outside of their traditional café locations.</p>",
+    keyFeatures: [
+      "Receipt scanning and validation - Engineered a user-friendly upload system that processes grocery receipt images and validates Dunkin' product purchases for point accrual",
+      'Vue.js responsive application - Developed a mobile-first, fully responsive interface optimized for seamless experiences across all devices',
+      'WCAG AAA accessibility compliance - Implemented the highest level of accessibility standards, ensuring an inclusive experience for all users',
+    ],
     keySkills: ['vue'],
-    skills: ['vue', 'javascript', 'scss'],
+    skills: ['vue', 'javascript', 'html', 'scss'],
     buttons: [
       {
         label: "Dunkin' At Home Extras",
@@ -165,22 +210,38 @@ export const projects: Record<string, ProjectType> = {
       },
     ],
     previewImage: {
-      src: dunkinExtras,
-      alt: 'Screenshot of the Dunkin at Home Extras Loyalty Program',
+      image: {
+        src: dunkinExtras,
+        alt: "Screenshot of the Dunkin' at Home Extras Loyalty Program",
+      },
     },
   },
   'dyla-home-page': {
     slug: 'dyla-home-page',
     title: 'Dyla Home Page',
-    shortDescription: 'The Dyla family landing page',
+    shortDescription:
+      'A minimalist landing page for the Dyla family powered by React and deployed with Vercel',
     description:
-      'My husband and I both have subdomains on dyla.com. We needed something at the top level domain it would be pretty odd if you went to dyla.com from kim.dyla.com and nothing was there. So, I built a basic, little splash page that highlights some of our favorite things. Enjoy pictures from our favorite vacations and a rotating random cocktail picker.',
-    keySkills: ['vue'],
-    skills: ['vue', 'javascript', 'scss', 'firebase'],
+      "Dyla.dev is a shared personal landing page that serves as a digital home base for my partner and me. The site features a curated slideshow of our favorite travel destinations alongside quick links to our social media profiles, GitHub repositories, and personal websites.</p><p>Built with React, TypeScript, and Next.js, this minimalist project demonstrates clean, efficient web development while providing a centralized hub for our online presence. Deployed through Vercel's seamless pipeline, the landing page maintains fast load times and reliable performance, offering visitors an immediate snapshot of our shared interests and individual work.",
+    keySkills: ['react'],
+    skills: [
+      'react',
+      'javascript',
+      'typescript',
+      'html',
+      'scss',
+      'nextjs',
+      'vercel',
+    ],
     buttons: [
       { label: 'dyla.dev', href: 'https://dyla.dev/' },
-      { label: 'GitHub', href: 'https://github.com/dylakim/dyla-home' },
+      { label: 'GitHub', href: 'https://github.com/dylakim/dyla-domain' },
     ],
-    previewImage: { src: dylaDev, alt: 'Screenshot of the dyla.dev home page' },
+    previewImage: {
+      image: {
+        src: dylaDev,
+        alt: 'Screenshot of the dyla.dev landing page',
+      },
+    },
   },
 };
