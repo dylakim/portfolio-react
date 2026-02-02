@@ -1,13 +1,16 @@
 import type { ProjectType } from 'types/project';
 
-import atdImage from '../assets/projects/atd-edu-landing.png';
 import atdCardCarousel from '../assets/projects/atd-card-carousel.png';
+import atdImage from '../assets/projects/atd-edu-landing.png';
 import atdPlpHeader from '../assets/projects/atd-product-list-page-header.png';
 import atdYou from '../assets/projects/atd-you.png';
-import portfolioImage from '../assets/projects/portfolio.png';
-import skoalRewardsPreview from '../assets/projects/skoal-rewards-full-crop.png';
+import cisDomainsDesktop from '../assets/projects/cis-domains-desktop.jpg';
+import cisLanding from '../assets/projects/cis-landing.jpg';
+import cisProductsServices from '../assets/projects/cis-products-and-services.jpg';
 import dunkinExtras from '../assets/projects/dunkinextra.png';
 import dylaDev from '../assets/projects/dylaDev.png';
+import portfolioImage from '../assets/projects/portfolio.png';
+import skoalRewardsPreview from '../assets/projects/skoal-rewards-full-crop.png';
 
 export const projects: Record<string, ProjectType> = {
   portfolio: {
@@ -147,10 +150,27 @@ export const projects: Record<string, ProjectType> = {
     buttons: [{ label: 'CIS Portal', href: 'https://portal.cisecurity.org/' }],
     previewImage: {
       image: {
-        src: atdImage,
-        alt: '',
+        src: cisLanding,
+        alt: "Screenshot of the Center for Internet Security Portal's authenticated landing page",
       },
+      caption: '',
     },
+    images: [
+      {
+        image: {
+          src: cisProductsServices,
+          alt: "Screenshot of the Center for Internet Security Portal's Products and Services page",
+        },
+        caption: '',
+      },
+      {
+        image: {
+          src: cisDomainsDesktop,
+          alt: 'Screenshot of a table of domains managed by an organization participating in the Center for Internet Security Portal. Sensitive information is redacted.',
+        },
+        caption: '',
+      },
+    ],
   },
   'altria-loyalty': {
     slug: 'altria-loyalty',
