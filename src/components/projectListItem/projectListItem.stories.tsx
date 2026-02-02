@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ProjectListItem } from './projectListItem';
-import atdImage from '../../assets/projects/atd.png';
+import atdImage from '../../assets/projects/atd-edu-landing.png';
 
 const meta = {
   component: ProjectListItem,
