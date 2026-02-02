@@ -19,13 +19,14 @@ export function ProjectListItem({
   shortDescription,
   keySkills,
 }: ProjectListItemProps) {
+  const { src, alt } = previewImage.image;
   return (
     <Link href={`/projects/${slug}`} className={styles.projectListItemLink}>
       <article className={classNames(styles.projectListItem, 'verticalFlex')}>
         <div className={styles.projectPreviewImageContainer}>
           <Image
-            src={previewImage.src}
-            alt={previewImage.alt}
+            src={src}
+            alt={alt}
             fill={true}
             className={styles.projectPreviewImage}
           />

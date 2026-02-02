@@ -177,6 +177,12 @@ export const Typescript: Story = {
   },
 };
 
+export const Vercel: Story = {
+  args: {
+    skill: 'vercel',
+  },
+};
+
 export const Vue: Story = {
   args: {
     skill: 'vue',

@@ -1,6 +1,5 @@
 'use client';
 import classNames from 'classnames';
-import Image from 'next/image';
 import Markdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import rehypeSanitize from 'rehype-sanitize';
@@ -48,26 +47,17 @@ export function ProjectDetail({
             {role || company ? (
               <div className={classNames(styles.experience, 'horizontalFlex')}>
                 {role && <p className={styles.role}>{role}</p>}
-                &bull;
+                <span className={styles.experienceSeparator}>&bull;</span>
                 {company && <p>{company}</p>}
               </div>
             ) : null}
           </div>
 
-          <Image
-            src={previewImage.src}
-            alt={previewImage.alt}
-            className={styles.image}
-          />
-
           <div className={classNames(styles.mainContent, 'gridTwoColumn')}>
             <div className={classNames(styles.summary, 'verticalFlex')}>
               <h2>Summary</h2>
 
-              <Markdown
-                components={{ p: 'div' }}
-                rehypePlugins={[rehypeRaw, rehypeSanitize]}
-              >
+              <Markdown rehypePlugins={[rehypeRaw, rehypeSanitize]}>
                 {description}
               </Markdown>
 
@@ -92,6 +82,11 @@ export function ProjectDetail({
             </div>
 
             <div className={classNames(styles.rightPanel, 'verticalFlex')}>
+              <div className="verticalFlex">
+                <h3>Toolset</h3>
+                {skills?.length && <SkillGroup skills={skills} />}
+              </div>
+
               {buttons?.length && (
                 <div className={classNames(styles.buttons, 'verticalFlex')}>
                   {buttons.map((button) => (
@@ -99,25 +94,26 @@ export function ProjectDetail({
                       key={button.label}
                       {...button}
                       className={styles.button}
+                      target="_blank"
                     />
                   ))}
                 </div>
               )}
-
-              <div className="verticalFlex">
-                <h3>Toolset</h3>
-                {skills?.length && <SkillGroup skills={skills} />}
-              </div>
             </div>
           </div>
 
-          {images?.length ? (
-            <div className={classNames(styles.imageList, 'verticalFlex')}>
-              {images.map((image, index) => (
-                <ImageWithCaption key={`secondary-image-${index}`} {...image} />
-              ))}
-            </div>
-          ) : null}
+          <div className={classNames(styles.imageList, 'verticalFlex')}>
+            <ImageWithCaption {...previewImage} />
+
+            {images?.length
+              ? images.map((image, index) => (
+                  <ImageWithCaption
+                    key={`secondary-image-${index}`}
+                    {...image}
+                  />
+                ))
+              : null}
+          </div>
         </div>
       </article>
     </>

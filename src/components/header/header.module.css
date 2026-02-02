@@ -20,10 +20,6 @@
   font-size: 1.5rem;
 }
 
-.navLinks {
-  --gap: 5rem;
-}
-
 .active {
   color: var(--yellow);
 }
