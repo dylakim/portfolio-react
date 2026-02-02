@@ -3,3 +3,9 @@
   max-width: 64rem;
   padding: 0 2.5rem;
 }
+
+@media screen and (max-width: 47.9375rem) {
+  .main {
+    padding-inline: 1.875rem;
+  }
+}
