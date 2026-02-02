@@ -33,7 +33,7 @@ const footerLinks: FooterLink[] = [
   },
   {
     label: 'Resume',
-    href: '/resume.pdf',
+    href: '/resume-kim-dyla.pdf',
     icon: faFile,
     target: '_blank',
   },
