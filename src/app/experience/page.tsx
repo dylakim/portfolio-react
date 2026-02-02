@@ -36,7 +36,7 @@ export default function Page() {
 
       <section className={styles.resume}>
         <ButtonLink
-          href="/resume.pdf"
+          href="/resume-kim-dyla.pdf"
           label="Download Resume"
           target="_blank"
         />
