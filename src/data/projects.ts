@@ -57,7 +57,7 @@ export const projects: Record<string, ProjectType> = {
     slug: 'association-for-talent-development',
     title: 'Association for Talent Development',
     role: 'React Front End Engineer',
-    company: 'Merkle - Customer Experience and Commerce',
+    company: 'Merkle - Digital Experience',
     shortDescription:
       "A modern redesign of ATD's Courses & Certification section, built with React, TypeScript, and Contentful.",
     description:
@@ -123,7 +123,7 @@ export const projects: Record<string, ProjectType> = {
     slug: 'center-for-internet-security',
     title: 'Center for Internet Security',
     role: 'React Front End Engineer',
-    company: 'Merkle - Customer Experience and Commerce',
+    company: 'Merkle - Digital Experience',
     shortDescription:
       'A cybersecurity member portal built with React, TypeScript, and Sitecore',
     description:
