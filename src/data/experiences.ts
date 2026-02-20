@@ -9,7 +9,7 @@ export const experiences: ExperienceProps[] = [
   {
     location: 'Remote',
     positionTitle: 'React Front End Engineer',
-    companyName: 'Merkle - Customer Experience and Commerce',
+    companyName: 'Merkle - Digital Experience',
     startDate: '9/2023',
     endDate: 'Present',
     logo: merkleLogo,
